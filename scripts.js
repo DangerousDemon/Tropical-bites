@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const menuItems = [
-    { name: 'Mas Huni Tacos', category: 'appetizers', price: 120, image: 'images/mas_huni_tacos.jpg', description: 'Tacos filled with a traditional Maldivian tuna salad.' },
-    { name: 'Spicy Fish Balls', category: 'appetizers', price: 90, image: 'images/spicy_fish_balls.jpg', description: 'Deep-fried fish balls with a spicy kick.' },
-    { name: 'Coconut Shrimp', category: 'appetizers', price: 150, image: 'images/coconut_shrimp.jpg', description: 'Shrimp coated in coconut flakes and fried to perfection.' },
+    { name: 'Mas Huni Tacos', category: 'appetizers', price: 120, image: 'mas_huni_tacos.jpg', description: 'Tacos filled with a traditional Maldivian tuna salad.' },
+    { name: 'Spicy Fish Balls', category: 'appetizers', price: 90, image: 'spicy_fish_balls.jpg', description: 'Deep-fried fish balls with a spicy kick.' },
+    { name: 'Coconut Shrimp', category: 'appetizers', price: 150, image: 'coconut_shrimp.jpg', description: 'Shrimp coated in coconut flakes and fried to perfection.' },
     { name: 'Maldivian Chicken Wings', category: 'main-courses', price: 180, image: 'images/maldivian_chicken_wings.jpg', description: 'Chicken wings marinated in Maldivian spices.' },
     { name: 'Fried Reef Fish Sandwich', category: 'main-courses', price: 135, image: 'images/fried_reef_fish_sandwich.jpg', description: 'Sandwich with fried reef fish and fresh vegetables.' },
     { name: 'Breadfruit Chips with Tuna Dip', category: 'main-courses', price: 105, image: 'images/breadfruit_chips.jpg', description: 'Crispy breadfruit chips served with a creamy tuna dip.' },
