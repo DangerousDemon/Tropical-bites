@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Bites Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Tropical Bites Logo" id="logo">
+        <h1>Tropical Bites</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>As-salamu alaykum and Welcome to Tropical Bites!</h2>
+        <p>Welcome to Tropical Bites, where we at Tropical Bites assure you that you are at the right destination for taste and delicious Maldivian food delivered right to your doorstep. Our menu has a variety of delicious dishes prepared from fresh ingredients in bringing the tastes of the Maldives right to your doorstep. From savory Mas Huni Tacos to sweet, fluffy Coconut Pancakes, there is something for everyone to delight in. And with a few simple clicks, you can take a gourmet trip through the heart of our pretty islands.</p>
+        <p>Thank you for choosing Tropical Bites! We look so forward to serving you and hope you enjoy every delectable bite!</p>
+        <p><strong>Enjoy your meal!</strong></p>
+        <img src="images/restaurant.jpg" alt="Restaurant Image">
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter">
+            <option value="all">All</option>
+            <option value="appetizers">Appetizers</option>
+            <option value="main-courses">Main Courses</option>
+            <option value="desserts">Desserts</option>
+            <option value="drinks">Drinks</option>
+        </select>
+        <div id="menu-items"></div>
+    </section>
+
+    <section id="order">
+        <h2>Order</h2>
+        <form id="order-form" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <fieldset>
+                <legend>Food Choices:</legend>
+                <table id="food-choices">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Food Item</th>
+                            <th>Price (MVR)</th>
+                            <th>Number of Servings</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </fieldset>
+            <p>Total Cost: MVR <span id="total-cost">0</span></p>
+            <fieldset>
+                <legend>Payment Method:</legend>
+                <label>
+                    <input type="radio" name="payment-method" value="bank-transfer" required> Bank Transfer
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="mobile-transfer"> Mobile Transfer
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="cash-on-delivery"> Cash on Delivery
+                </label>
+            </fieldset>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
